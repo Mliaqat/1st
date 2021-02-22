@@ -49,5 +49,5 @@ jobs:
 
 
 
-    -name: deploying
-     run: surge ./build http://liaqat2.surge.sh/ --token ${{secrets:A}}
+  -name: deploying
+  run: surge ./build http://liaqat2.surge.sh/ --token ${{secrets:A}}
