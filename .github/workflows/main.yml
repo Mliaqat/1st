@@ -46,7 +46,7 @@ jobs:
     
 
   -name: deploying
-   run: surge ./build http://liaqat2.surge.sh/ --token ${{secrets:A}}
+  run: surge ./build http://liaqat2.surge.sh/ --token ${{secrets:A}}
      
      
     # Set always-auth in npmrc
