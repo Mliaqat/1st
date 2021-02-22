@@ -36,15 +36,17 @@ jobs:
     # Yarn command
     cmd: install
 
-    -name: installing Surge
-      run: npm install -g surge
-    -name: creating build
-      run: yarn build
+    
+      -name: creating build
+         run: yarn build
+
+      -name: installing Surge
+         run: npm install -g surge
 
     
 
-    -name: deploying
-      run: surge ./build http://liaqat2.surge.sh/ --token ${{secrets:A}}
+      -name: deploying
+         run: surge ./build http://liaqat2.surge.sh/ --token ${{secrets:A}}
      
      
     # Set always-auth in npmrc
